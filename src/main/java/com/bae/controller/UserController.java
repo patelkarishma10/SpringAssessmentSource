@@ -21,7 +21,7 @@ public class UserController {
 	}
 
 	@GetMapping("/find/{searchTerm}")
-	public ResponseEntity<Object> findByNumber(@PathVariable("searchTerm") String searchTerm) {
+	public ResponseEntity<Object> findBySearchTerm(@PathVariable("searchTerm") String searchTerm) {
 		return service.findBySearchTerm(searchTerm);
 
 	}
